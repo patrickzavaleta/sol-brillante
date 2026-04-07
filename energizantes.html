@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energizantes | Sol Brillante</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f7f9; color: #1a1a1a; }
+        .top-bar { background-color: #0d2c4d; color: white; padding: 10px 50px; text-align: right; font-size: 14px; border-bottom: 4px solid #d4af37; }
+        nav { background-color: white; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .btn-volver { text-decoration: none; color: #0d2c4d; font-weight: bold; border: 2px solid #0d2c4d; padding: 8px 15px; border-radius: 5px; transition: 0.3s; font-size: 14px; }
+        .btn-volver:hover { background-color: #0d2c4d; color: #d4af37; }
+        .header-seccion { text-align: center; padding: 30px 20px; background-color: #ffffff; border-bottom: 1px solid #ddd; }
+        .header-seccion h2 { color: #0d2c4d; font-size: 28px; margin: 0; text-transform: uppercase; }
+        .marca-titulo { width: 100%; grid-column: 1 / -1; background: #eef2f7; padding: 10px; margin-top: 25px; color: #0d2c4d; border-left: 5px solid #d4af37; font-weight: bold; text-transform: uppercase; font-size: 14px; }
+        .contenedor-productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .tarjeta-producto { background-color: white; border-radius: 8px; padding: 15px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid #e1e8ed; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
+        .tarjeta-producto:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-color: #d4af37; }
+        .img-producto { width: 100%; height: 150px; object-fit: contain; background-color: #f9f9f9; border-radius: 4px; margin-bottom: 10px; }
+        .nombre-producto { font-size: 14px; font-weight: bold; color: #0d2c4d; margin: 0; min-height: 35px; display: flex; align-items: center; justify-content: center; line-height: 1.2; }
+        .sabor-badge { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #d4af37; margin: 5px 0; }
+        .empaque { font-size: 13px; color: #e63946; font-weight: bold; margin-top: 8px; border-top: 1px solid #eee; padding-top: 8px; }
+        .btn-whatsapp-flotante { position: fixed; bottom: 30px; right: 30px; background-color: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 1000; font-size: 30px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">📍 Santa Anita - Puesto 56 | 📞 902109197</div>
+    <nav>
+        <a href="index.html" class="btn-volver">← VOLVER AL MENÚ</a>
+        <div style="font-weight: 900; color: #0d2c4d;">SOL <span style="color:#d4af37">BRILLANTE</span></div>
+    </nav>
+
+    <div class="header-seccion">
+        <h2>Catálogo de Energizantes y Rehidratantes</h2>
+        <p>Ventas por Mayor | Mercado de Productores</p>
+    </div>
+
+    <a href="https://wa.me/51902109197?text=Hola+Sol+Brillante,+deseo+hacer+un+pedido" class="btn-whatsapp-flotante">📱</a>
+
+    <section class="contenedor-productos">
+        
+        <div class="marca-titulo">Gatorade 500ml</div>
+        <div class="tarjeta-producto"><img src="img/gatorade_rojo_500.jpg" class="img-producto"><p class="nombre-producto">Gatorade 500ml</p><p class="sabor-badge">Rojo (Tropical Fruit)</p><p class="empaque">Pack x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gatorade_mandarina_500.jpg" class="img-producto"><p class="nombre-producto">Gatorade 500ml</p><p class="sabor-badge">Mandarina</p><p class="empaque">Pack x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gatorade_azul_500.jpg" class="img-producto"><p class="nombre-producto">Gatorade 500ml</p><p class="sabor-badge">Azul (Cool Blue)</p><p class="empaque">Pack x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gatorade_blanco_500.jpg" class="img-producto"><p class="nombre-producto">Gatorade 500ml</p><p class="sabor-badge">Blanco (Glacier Freeze)</p><p class="empaque">Pack x 12 und</p></div>
+
+        <div class="marca-titulo">Gatorade 750ml</div>
+        <div class="tarjeta-producto"><img src="img/gatorade_rojo_750.jpg" class="img-producto"><p class="nombre-producto">Gatorade 750ml</p><p class="sabor-badge">Rojo</p><p class="empaque">Pack x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gatorade_mandarina_750.jpg" class="img-producto"><p class="nombre-producto">Gatorade 750ml</p><p class="sabor-badge">Mandarina</p><p class="empaque">Pack x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gatorade_blanco_750.jpg" class="img-producto"><p class="nombre-producto">Gatorade 750ml</p><p class="sabor-badge">Blanco</p><p class="empaque">Pack x 12 und</p></div>
+
+        <div class="marca-titulo">Sporade 1 Litro</div>
+        <div class="tarjeta-producto"><img src="img/sporade_1lt.jpg" class="img-producto"><p class="nombre-producto">Sporade 1lt</p><p class="sabor-badge">Varios Sabores</p><p class="empaque">Pack x 6 und</p></div>
+
+        <div class="marca-titulo">Sporade 500ml / 1.5lt</div>
+        <div class="tarjeta-producto"><img src="img/sporade_rojo_500.jpg" class="img-producto"><p class="nombre-producto">Sporade 500ml</p><p class="sabor-badge">Rojo</p><p class="empaque">Pack x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/sporade_azul_500.jpg" class="img-producto"><p class="nombre-producto">Sporade 500ml</p><p class="sabor-badge">Azul</p><p class="empaque">Pack x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/sporade_1.5lt.jpg" class="img-producto"><p class="nombre-producto">Sporade 1.5lt</p><p class="sabor-badge">Surtido</p><p class="empaque">Pack x 6 und</p></div>
+
+        <div class="marca-titulo">Volt Energizante</div>
+        <div class="tarjeta-producto"><img src="img/volt_azul_300.jpg" class="img-producto"><p class="nombre-producto">Volt 300ml</p><p class="sabor-badge">Azul (Ginseng)</p><p class="empaque">Pack x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/volt_celeste_300.jpg" class="img-producto"><p class="nombre-producto">Volt 300ml</p><p class="sabor-badge">Maca / Celeste</p><p class="empaque">Pack x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/volt_lata_473.jpg" class="img-producto"><p class="nombre-producto">Volt Lata 473ml</p><p class="sabor-badge">Azul / Rosado</p><p class="empaque">Pack x 6 und</p></div>
+
+        <div class="marca-titulo">Línea Premium</div>
+        <div class="tarjeta-producto"><img src="img/monster_negro.jpg" class="img-producto"><p class="nombre-producto">Monster 473ml</p><p class="sabor-badge">Negro Clásico</p><p class="empaque">Caja x 24 und</p></div>
+        <div class="tarjeta-producto"><img src="img/monster_blanco.jpg" class="img-producto"><p class="nombre-producto">Monster 473ml</p><p class="sabor-badge">Ultra Blanco</p><p class="empaque">Caja x 24 und</p></div>
+        <div class="tarjeta-producto"><img src="img/redbull.jpg" class="img-producto"><p class="nombre-producto">Red Bull 250ml</p><p class="sabor-badge">Clásico</p><p class="empaque">Caja x 24 und</p></div>
+
+        <div class="marca-titulo">Otros Rehidratantes</div>
+        <div class="tarjeta-producto"><img src="img/electrolight.jpg" class="img-producto"><p class="nombre-producto">Electrolight 500ml</p><p class="sabor-badge">Varios Sabores</p><p class="empaque">Pack x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/powerade_azul.jpg" class="img-producto"><p class="nombre-producto">Powerade 600ml</p><p class="sabor-badge">Azul / Rojo</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/dilyte.jpg" class="img-producto"><p class="nombre-producto">Dilyte 600ml</p><p class="sabor-badge">Surtido</p><p class="empaque">Pack x 6 und</p></div>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaseosas | Sol Brillante</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f7f9; color: #1a1a1a; }
+        .top-bar { background-color: #0d2c4d; color: white; padding: 10px 50px; text-align: right; font-size: 14px; border-bottom: 4px solid #d4af37; }
+        
+        nav { background-color: white; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .btn-volver { text-decoration: none; color: #0d2c4d; font-weight: bold; border: 2px solid #0d2c4d; padding: 8px 15px; border-radius: 5px; transition: 0.3s; font-size: 14px; }
+        .btn-volver:hover { background-color: #0d2c4d; color: #d4af37; }
+
+        .header-seccion { text-align: center; padding: 30px 20px; background-color: #ffffff; border-bottom: 1px solid #ddd; }
+        .header-seccion h2 { color: #0d2c4d; font-size: 28px; margin: 0; text-transform: uppercase; }
+
+        .marca-titulo { width: 100%; grid-column: 1 / -1; background: #eef2f7; padding: 10px; margin-top: 20px; color: #0d2c4d; border-left: 5px solid #d4af37; font-weight: bold; text-transform: uppercase; font-size: 14px; }
+
+        .contenedor-productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; max-width: 1400px; margin: 0 auto; padding: 20px; }
+
+        .tarjeta-producto { background-color: white; border-radius: 8px; padding: 15px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid #e1e8ed; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
+        .tarjeta-producto:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-color: #d4af37; }
+
+        .img-producto { width: 100%; height: 160px; object-fit: contain; background-color: #f9f9f9; border-radius: 4px; margin-bottom: 10px; }
+        .nombre-producto { font-size: 14px; font-weight: bold; color: #333; min-height: 35px; display: flex; align-items: center; justify-content: center; margin: 0; line-height: 1.2; }
+        
+        /* Etiquetas especiales */
+        .badge-retornable { color: #e63946; font-size: 11px; font-weight: 900; text-transform: uppercase; margin-bottom: 5px; display: block; }
+        .empaque-text { color: #d4af37; font-size: 12px; font-weight: bold; margin-top: 5px; }
+
+        .btn-whatsapp-flotante { position: fixed; bottom: 30px; right: 30px; background-color: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 1000; transition: 0.3s; font-size: 30px; }
+        .btn-whatsapp-flotante:hover { transform: scale(1.1); background-color: #128C7E; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">📍 Distribución Mayorista - Puesto 56 | 📞 902109197</div>
+
+    <nav>
+        <a href="index.html" class="btn-volver">← VOLVER AL MENÚ</a>
+        <div style="font-weight: 900; color: #0d2c4d;">SOL <span style="color:#d4af37">BRILLANTE</span></div>
+    </nav>
+
+    <div class="header-seccion">
+        <h2>Catálogo de Gaseosas</h2>
+    </div>
+
+    <a href="https://wa.me/51902109197?text=Hola+Sol+Brillante,+deseo+hacer+un+pedido+de+Gaseosas" class="btn-whatsapp-flotante">📱</a>
+
+    <section class="contenedor-productos">
+        
+        <div class="marca-titulo">Inca Kola (Retornable - Traer Envase)</div>
+        <div class="tarjeta-producto"><span class="badge-retornable">Retornable</span><img src="img/inca_1.5_ret.jpg" class="img-producto"><p class="nombre-producto">Inca Kola 1.5lt</p><p class="empaque-text">x 8 und</p></div>
+        <div class="tarjeta-producto"><span class="badge-retornable">Retornable</span><img src="img/inca_1_ret.jpg" class="img-producto"><p class="nombre-producto">Inca Kola 1lt</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><span class="badge-retornable">Retornable</span><img src="img/inca_625_ret.jpg" class="img-producto"><p class="nombre-producto">Inca Kola 625ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><span class="badge-retornable">Retornable</span><img src="img/inca_296_ret.jpg" class="img-producto"><p class="nombre-producto">Inca Kola 296ml</p><p class="empaque-text">x 24 und</p></div>
+        <div class="tarjeta-producto"><span class="badge-retornable">Retornable</span><img src="img/inca_192_ret.jpg" class="img-producto"><p class="nombre-producto">Inca Kola 192ml</p><p class="empaque-text">x 24 und</p></div>
+
+        <div class="marca-titulo">Coca-Cola (Retornable - Traer Envase)</div>
+        <div class="tarjeta-producto"><span class="badge-retornable">Retornable</span><img src="img/coca_1.5_ret.jpg" class="img-producto"><p class="nombre-producto">Coca-Cola 1.5lt</p><p class="empaque-text">x 8 und</p></div>
+        <div class="tarjeta-producto"><span class="badge-retornable">Retornable</span><img src="img/coca_1_ret.jpg" class="img-producto"><p class="nombre-producto">Coca-Cola 1lt</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><span class="badge-retornable">Retornable</span><img src="img/coca_296_ret.jpg" class="img-producto"><p class="nombre-producto">Coca-Cola 296ml</p><p class="empaque-text">x 24 und</p></div>
+        <div class="tarjeta-producto"><span class="badge-retornable">Retornable</span><img src="img/coca_192_ret.jpg" class="img-producto"><p class="nombre-producto">Coca-Cola 192ml</p><p class="empaque-text">x 24 und</p></div>
+
+        <div class="marca-titulo">Inca Kola (Plástico / Descartable)</div>
+        <div class="tarjeta-producto"><img src="img/inca_3.jpg" class="img-producto"><p class="nombre-producto">Inca 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/inca_2.25.jpg" class="img-producto"><p class="nombre-producto">Inca 2.25lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/inca_1.5.jpg" class="img-producto"><p class="nombre-producto">Inca 1.5lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/inca_1.jpg" class="img-producto"><p class="nombre-producto">Inca 1lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/inca_600.jpg" class="img-producto"><p class="nombre-producto">Inca 600ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/inca_zero_600.jpg" class="img-producto"><p class="nombre-producto">Inca Zero 600ml</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/inca_300.jpg" class="img-producto"><p class="nombre-producto">Inca 300ml</p><p class="empaque-text">x 6 und</p></div>
+
+        <div class="marca-titulo">Coca-Cola (Plástico / Descartable)</div>
+        <div class="tarjeta-producto"><img src="img/coca_3.jpg" class="img-producto"><p class="nombre-producto">Coca 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/coca_2.25.jpg" class="img-producto"><p class="nombre-producto">Coca 2.25lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/coca_1.5.jpg" class="img-producto"><p class="nombre-producto">Coca 1.5lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/coca_1.jpg" class="img-producto"><p class="nombre-producto">Coca 1lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/coca_600.jpg" class="img-producto"><p class="nombre-producto">Coca 600ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/coca_zero_600.jpg" class="img-producto"><p class="nombre-producto">Coca Zero 600ml</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/coca_300.jpg" class="img-producto"><p class="nombre-producto">Coca 300ml</p><p class="empaque-text">x 6 und</p></div>
+
+        <div class="marca-titulo">Fanta y Sprite</div>
+        <div class="tarjeta-producto"><img src="img/fanta_n_3.jpg" class="img-producto"><p class="nombre-producto">Fanta Naranja 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/fanta_n_2.25.jpg" class="img-producto"><p class="nombre-producto">Fanta Naranja 2.25lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/fanta_n_500.jpg" class="img-producto"><p class="nombre-producto">Fanta Naranja 500ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/fanta_n_300.jpg" class="img-producto"><p class="nombre-producto">Fanta Naranja 300ml</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/fanta_r_3.jpg" class="img-producto"><p class="nombre-producto">Fanta Roja 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/fanta_r_2.25.jpg" class="img-producto"><p class="nombre-producto">Fanta Roja 2.25lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/fanta_r_500.jpg" class="img-producto"><p class="nombre-producto">Fanta Roja 500ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/fanta_r_300.jpg" class="img-producto"><p class="nombre-producto">Fanta Roja 300ml</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/sprite_3.jpg" class="img-producto"><p class="nombre-producto">Sprite 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/sprite_2.25.jpg" class="img-producto"><p class="nombre-producto">Sprite 2.25lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/sprite_500.jpg" class="img-producto"><p class="nombre-producto">Sprite 500ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/sprite_300.jpg" class="img-producto"><p class="nombre-producto">Sprite 300ml</p><p class="empaque-text">x 6 und</p></div>
+
+        <div class="marca-titulo">Pepsi / 7Up</div>
+        <div class="tarjeta-producto"><img src="img/pepsi_3.jpg" class="img-producto"><p class="nombre-producto">Pepsi 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/pepsi_2.jpg" class="img-producto"><p class="nombre-producto">Pepsi 2lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/pepsi_1.5.jpg" class="img-producto"><p class="nombre-producto">Pepsi 1.5lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/pepsi_1.jpg" class="img-producto"><p class="nombre-producto">Pepsi 1lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/pepsi_750.jpg" class="img-producto"><p class="nombre-producto">Pepsi 750ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/pepsi_450.jpg" class="img-producto"><p class="nombre-producto">Pepsi 450ml</p><p class="empaque-text">x 15 und</p></div>
+        <div class="tarjeta-producto"><img src="img/pepsi_355.jpg" class="img-producto"><p class="nombre-producto">Pepsi 355ml</p><p class="empaque-text">x 15 und</p></div>
+        <div class="tarjeta-producto"><img src="img/7up_1.5.jpg" class="img-producto"><p class="nombre-producto">7up 1.5lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/7up_355.jpg" class="img-producto"><p class="nombre-producto">7Up 355ml</p><p class="empaque-text">x 15 und</p></div>
+
+        <div class="marca-titulo">Big Cola / Oro</div>
+        <div class="tarjeta-producto"><img src="img/big_3.jpg" class="img-producto"><p class="nombre-producto">Big Cola 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/big_1.5.jpg" class="img-producto"><p class="nombre-producto">Big Cola 1.5lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/big_1.jpg" class="img-producto"><p class="nombre-producto">Big Cola 1lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/big_355.jpg" class="img-producto"><p class="nombre-producto">Big Cola 355ml</p><p class="empaque-text">x 15 und</p></div>
+        <div class="tarjeta-producto"><img src="img/oro_3.jpg" class="img-producto"><p class="nombre-producto">Gaseosa Oro 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/oro_1.5.jpg" class="img-producto"><p class="nombre-producto">Gaseosa Oro 1.5lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/oro_1.jpg" class="img-producto"><p class="nombre-producto">Gaseosa Oro 1lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/oro_355.jpg" class="img-producto"><p class="nombre-producto">Gaseosa Oro 355ml</p><p class="empaque-text">x 15 und</p></div>
+
+        <div class="marca-titulo">Kola Real (KR Sabores)</div>
+        <div class="tarjeta-producto"><img src="img/kr_3.jpg" class="img-producto"><p class="nombre-producto">KR Sabores 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/kr_1.5.jpg" class="img-producto"><p class="nombre-producto">KR Sabores 1.5lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/kr_fresa_1.jpg" class="img-producto"><p class="nombre-producto">KR Fresa 1lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/kr_355.jpg" class="img-producto"><p class="nombre-producto">KR Sabores 450ml</p><p class="empaque-text">x 15 und</p></div>
+
+        <div class="marca-titulo">Concordia</div>
+        <div class="tarjeta-producto"><img src="img/concordia_3.jpg" class="img-producto"><p class="nombre-producto">Concordia 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/concordia_1.5.jpg" class="img-producto"><p class="nombre-producto">Concordia 1.5lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/concordia_500.jpg" class="img-producto"><p class="nombre-producto">Concordia 500ml</p><p class="empaque-text">x 15 und</p></div>
+        <div class="tarjeta-producto"><img src="img/concordia_355.jpg" class="img-producto"><p class="nombre-producto">Concordia 355ml</p><p class="empaque-text">x 15 und</p></div>
+
+        <div class="marca-titulo">Gaseosas en Lata</div>
+        <div class="tarjeta-producto"><img src="img/lata_inca.jpg" class="img-producto"><p class="nombre-producto">Inca Lata 355ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/lata_coca.jpg" class="img-producto"><p class="nombre-producto">Coca Lata 355ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/lata_sprite.jpg" class="img-producto"><p class="nombre-producto">Sprite Lata 355ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/lata_fanta.jpg" class="img-producto"><p class="nombre-producto">Fanta Lata 355ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/lata_pepsi.jpg" class="img-producto"><p class="nombre-producto">Pepsi Lata 355ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/lata_oro.jpg" class="img-producto"><p class="nombre-producto">Oro Lata 355ml</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/lata_big.jpg" class="img-producto"><p class="nombre-producto">Big Cola Lata 355ml</p><p class="empaque-text">x 6 und</p></div>
+
+        <div class="marca-titulo">Otros / Varios</div>
+        <div class="tarjeta-producto"><img src="img/maltin.jpg" class="img-producto"><p class="nombre-producto">Maltin Power</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/guarana_3.jpg" class="img-producto"><p class="nombre-producto">Guaraná 3lt</p><p class="empaque-text">x 4 und</p></div>
+        <div class="tarjeta-producto"><img src="img/guarana_2.jpg" class="img-producto"><p class="nombre-producto">Guaraná 2lt</p><p class="empaque-text">x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/guarana_500.jpg" class="img-producto"><p class="nombre-producto">Guaraná 450ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/guarana_355.jpg" class="img-producto"><p class="nombre-producto">Guaraná 355ml</p><p class="empaque-text">x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/crush_500.jpg" class="img-producto"><p class="nombre-producto">Crush 500 ml</p><p class="empaque-text">x 12und</p></div>
+        <div class="tarjeta-producto"><img src="img/tea_500.jpg" class="img-producto"><p class="nombre-producto">Free Tea 500ml</p><p class="empaque-text">x 12 und</p></div>
+
+    </section>
+
+</body>
+</html>

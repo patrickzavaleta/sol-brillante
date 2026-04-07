@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lácteos | Sol Brillante</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f7f9; color: #1a1a1a; }
+        .top-bar { background-color: #0d2c4d; color: white; padding: 10px 50px; text-align: right; font-size: 14px; border-bottom: 4px solid #d4af37; }
+        
+        nav { background-color: white; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .btn-volver { text-decoration: none; color: #0d2c4d; font-weight: bold; border: 2px solid #0d2c4d; padding: 8px 15px; border-radius: 5px; transition: 0.3s; font-size: 14px; }
+        .btn-volver:hover { background-color: #0d2c4d; color: #d4af37; }
+
+        .header-seccion { text-align: center; padding: 30px 20px; background-color: #ffffff; border-bottom: 1px solid #ddd; }
+        .header-seccion h2 { color: #0d2c4d; font-size: 28px; margin: 0; text-transform: uppercase; }
+        .header-seccion p { margin: 5px 0 0; color: #666; font-size: 14px; }
+
+        .marca-titulo { width: 100%; grid-column: 1 / -1; background: #eef2f7; padding: 10px; margin-top: 20px; color: #0d2c4d; border-left: 5px solid #d4af37; font-weight: bold; text-transform: uppercase; font-size: 14px; }
+
+        .contenedor-productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; max-width: 1300px; margin: 0 auto; padding: 20px; }
+
+        .tarjeta-producto { background-color: white; border-radius: 8px; padding: 15px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid #e1e8ed; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
+        .tarjeta-producto:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-color: #d4af37; }
+
+        .img-producto { width: 100%; height: 160px; object-fit: contain; background-color: #f9f9f9; border-radius: 4px; margin-bottom: 10px; }
+        .nombre-producto { font-size: 14px; font-weight: bold; color: #0d2c4d; margin: 0; line-height: 1.2; min-height: 35px; display: flex; align-items: center; justify-content: center; }
+        .sabor-tag { font-size: 12px; color: #d4af37; font-weight: bold; text-transform: uppercase; margin-top: 5px; }
+        .empaque { font-size: 13px; color: #666; font-weight: bold; margin-top: 5px; }
+
+        .btn-whatsapp-flotante { position: fixed; bottom: 30px; right: 30px; background-color: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 1000; transition: 0.3s; font-size: 30px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">📍 Santa Anita - Puesto 56 | 📞 902109197</div>
+
+    <nav>
+        <a href="index.html" class="btn-volver">← VOLVER AL MENÚ</a>
+        <div style="font-weight: 900; color: #0d2c4d;">SOL <span style="color:#d4af37">BRILLANTE</span></div>
+    </nav>
+
+    <div class="header-seccion">
+        <h2>Catálogo de Lácteos</h2>
+        <p>Productos frescos por Mayor | Mercado Productores</p>
+    </div>
+
+    <a href="https://wa.me/51902109197?text=Hola+Sol+Brillante,+deseo+hacer+un+pedido+de+Lácteos" class="btn-whatsapp-flotante">📱</a>
+
+    <section class="contenedor-productos">
+        
+        <div class="marca-titulo">Yogur Gloria 1lt (Pack x 6)</div>
+        <div class="tarjeta-producto"><img src="img/gloria_1lt_fresa.jpg" class="img-producto"><p class="nombre-producto">Gloria 1lt</p><p class="sabor-tag">Fresa</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gloria_1lt_vainilla.jpg" class="img-producto"><p class="nombre-producto">Gloria 1lt</p><p class="sabor-tag">Vainilla</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gloria_1lt_lucuma.jpg" class="img-producto"><p class="nombre-producto">Gloria 1lt</p><p class="sabor-tag">Lúcuma</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gloria_1lt_durazno.jpg" class="img-producto"><p class="nombre-producto">Gloria 1lt</p><p class="sabor-tag">Durazno</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gloria_1lt_guanabana.jpg" class="img-producto"><p class="nombre-producto">Gloria 1lt</p><p class="sabor-tag">Guanábana</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gloria_1lt_tutti.jpg" class="img-producto"><p class="nombre-producto">Gloria 1lt</p><p class="sabor-tag">Tutti Frutti</p><p class="empaque">Pack x 6 und</p></div>
+
+        <div class="marca-titulo">Yogur Gloria 500gr (Pack x 6)</div>
+        <div class="tarjeta-producto"><img src="img/gloria_500_fresa.jpg" class="img-producto"><p class="nombre-producto">Gloria 500gr</p><p class="sabor-tag">Fresa</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gloria_500_vainilla.jpg" class="img-producto"><p class="nombre-producto">Gloria 500gr</p><p class="sabor-tag">Vainilla</p><p class="empaque">Pack x 6 und</p></div>
+
+        <div class="marca-titulo">Yogur Gloria 180gr (Caja x 24)</div>
+        <div class="tarjeta-producto"><img src="img/gloria_180_fresa.jpg" class="img-producto"><p class="nombre-producto">Gloria 180gr</p><p class="sabor-tag">Fresa</p><p class="empaque">Caja x 24 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gloria_180_vainilla.jpg" class="img-producto"><p class="nombre-producto">Gloria 180gr</p><p class="sabor-tag">Vainilla</p><p class="empaque">Caja x 24 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gloria_180_lucuma.jpg" class="img-producto"><p class="nombre-producto">Gloria 180gr</p><p class="sabor-tag">Lúcuma</p><p class="empaque">Caja x 24 und</p></div>
+        <div class="tarjeta-producto"><img src="img/gloria_180_durazno.jpg" class="img-producto"><p class="nombre-producto">Gloria 180gr</p><p class="sabor-tag">Durazno</p><p class="empaque">Caja x 24 und</p></div>
+
+        <div class="marca-titulo">Yopimix y Batimix (Caja x 24)</div>
+        <div class="tarjeta-producto"><img src="img/yopimix_choc.jpg" class="img-producto"><p class="nombre-producto">Yopimix</p><p class="sabor-tag">Chocolate</p><p class="empaque">Caja x 24 und</p></div>
+        <div class="tarjeta-producto"><img src="img/yopimix_colores.jpg" class="img-producto"><p class="nombre-producto">Yopimix</p><p class="sabor-tag">Bolitas Colores</p><p class="empaque">Caja x 24 und</p></div>
+        <div class="tarjeta-producto"><img src="img/yopimix_kaboom.jpg" class="img-producto"><p class="nombre-producto">Yopimix</p><p class="sabor-tag">Kaboom</p><p class="empaque">Caja x 24 und</p></div>
+        <div class="tarjeta-producto"><img src="img/batimix.jpg" class="img-producto"><p class="nombre-producto">Batimix</p><p class="sabor-tag">Vainilla con Cereal</p><p class="empaque">Caja x 24 und</p></div>
+
+        <div class="marca-titulo">Yogur Griego</div>
+        <div class="tarjeta-producto"><img src="img/griego_vaso.jpg" class="img-producto"><p class="nombre-producto">Griego Vasito</p><p class="sabor-tag">Natural</p><p class="empaque">Caja x 24 und</p></div>
+        <div class="tarjeta-producto"><img src="img/griego_1lt.jpg" class="img-producto"><p class="nombre-producto">Griego 1lt</p><p class="sabor-tag">Natural</p><p class="empaque">Pack x 6 und</p></div>
+
+        <div class="marca-titulo">Leches (Cajas y Tarros)</div>
+        <div class="tarjeta-producto"><img src="img/leche_azul_1lt.jpg" class="img-producto"><p class="nombre-producto">Leche Gloria Azul 1lt</p><p class="empaque">Caja x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/leche_azul_900.jpg" class="img-producto"><p class="nombre-producto">Leche Gloria Bolsa 900gr</p><p class="empaque">Caja x 12 und</p></div>
+        <div class="tarjeta-producto"><img src="img/leche_azul_tarro.jpg" class="img-producto"><p class="nombre-producto">Gloria Tarro 390gr</p><p class="empaque">Caja x 24 und</p></div>
+        <div class="tarjeta-producto"><img src="img/bonle_caja.jpg" class="img-producto"><p class="nombre-producto">Bonlé Caja 480gr</p><p class="empaque">Caja x 24 und</p></div>
+
+        <div class="marca-titulo">Yogur Yofresh 1lt (Pack x 6)</div>
+        <div class="tarjeta-producto"><img src="img/yofresh_1lt_fresa.jpg" class="img-producto"><p class="nombre-producto">Yofresh 1lt</p><p class="sabor-tag">Fresa</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/yofresh_1lt_vainilla.jpg" class="img-producto"><p class="nombre-producto">Yofresh 1lt</p><p class="sabor-tag">Vainilla</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/yofresh_1lt_lucuma.jpg" class="img-producto"><p class="nombre-producto">Yofresh 1lt</p><p class="sabor-tag">Lúcuma</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/yofresh_1lt_durazno.jpg" class="img-producto"><p class="nombre-producto">Yofresh 1lt</p><p class="sabor-tag">Durazno</p><p class="empaque">Pack x 6 und</p></div>
+
+        <div class="marca-titulo">Yogur Yofresh 330gr (Pack x 6)</div>
+        <div class="tarjeta-producto"><img src="img/yofresh_330_fresa.jpg" class="img-producto"><p class="nombre-producto">Yofresh 330gr</p><p class="sabor-tag">Fresa</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/yofresh_330_vainilla.jpg" class="img-producto"><p class="nombre-producto">Yofresh 330gr</p><p class="sabor-tag">Vainilla</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/yofresh_330_lucuma.jpg" class="img-producto"><p class="nombre-producto">Yofresh 330gr</p><p class="sabor-tag">Lúcuma</p><p class="empaque">Pack x 6 und</p></div>
+        <div class="tarjeta-producto"><img src="img/yofresh_330_durazno.jpg" class="img-producto"><p class="nombre-producto">Yofresh 330gr</p><p class="sabor-tag">Durazno</p><p class="empaque">Pack x 6 und</p></div>
+
+        <div class="marca-titulo">Yomost (Caja x 24)</div>
+        <div class="tarjeta-producto"><img src="img/yomost_fresa.jpg" class="img-producto"><p class="nombre-producto">Yomost</p><p class="sabor-tag">Fresa</p><p class="empaque">Caja x 24 und</p></div>
+
+        <div class="marca-titulo">Chocolatadas</div>
+        <div class="tarjeta-producto">
+            <img src="img/chocolatada_yopi.jpg" class="img-producto">
+            <p class="nombre-producto">Chocolatada Yopi</p>
+            <p class="empaque">x 24 und</p>
+        </div>
+        <div class="tarjeta-producto">
+            <img src="img/chocolatada_gloria.jpg" class="img-producto">
+            <p class="nombre-producto">Chocolatada Gloria</p>
+            <p class="empaque">x 24 und</p>
+        </div>
+        <div class="tarjeta-producto">
+            <img src="img/chocolatada_laive.jpg" class="img-producto">
+            <p class="nombre-producto">Chocolatada Laive</p>
+            <p class="empaque">x 24 und</p>
+        </div>
+        <div class="tarjeta-producto">
+            <img src="img/chocolatada_bonle.jpg" class="img-producto">
+            <p class="nombre-producto">Chocolatada Bonlé</p>
+            <p class="empaque">x 24 und</p>
+        </div>
+        <div class="tarjeta-producto">
+            <img src="img/chocolatada_chicolac.jpg" class="img-producto">
+            <p class="nombre-producto">Chocolatada Chicolac</p>
+            <p class="empaque">x 24 und</p>
+        </div>
+
+        <div class="marca-titulo">Abarrotes y Snacks</div>
+        
+        <div class="tarjeta-producto">
+            <img src="img/arroz_jairito_50kg.jpg" class="img-producto">
+            <p class="nombre-producto">Arroz Jairito</p>
+            <p class="sabor-texto">Calidad Superior</p>
+            <p class="empaque">Saco x 50kg</p>
+        </div>
+
+        <div class="tarjeta-producto">
+            <img src="img/rellenito.jpg" class="img-producto">
+            <p class="nombre-producto">Bizcocho Rellenito</p>
+            <p class="sabor-texto">Varios Sabores</p>
+            <p class="empaque">Paquete / Display</p>
+        </div>
+    </section>
+
+</body>
+</html>
